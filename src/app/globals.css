@@ -28,5 +28,11 @@ body {
 }
 
 .headerBg {
-  background-image: radial-gradient(circle, #40e0d04d, #051830);
+  background-image: radial-gradient(
+    circle,
+    rgb(4, 51, 66) 0%,
+    rgb(6, 25, 49) 100%
+  );
+
+  border-bottom: 1px solid rgb(1, 99, 105);
 }

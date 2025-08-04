@@ -9,9 +9,31 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        headerBg: "#051830",
-        headerBrightBg: "#40e0d04d",
+      keyframes: {
+        fadeInScale: {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.9)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)",
+          },
+        },
+        fadeOutScale: {
+          "0%": {
+            opacity: "1",
+            transform: "scale(1)",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "scale(0.9)",
+          },
+        },
+      },
+      animation: {
+        fadeInScale: "fadeInScale 0.4s ease-out forwards",
+        fadeOutScale: "fadeOutScale 0.4s ease-in forwards",
       },
     },
   },

@@ -1,7 +1,7 @@
-export default function Home() {
+export default function page() {
   return (
     <div className="h-dvh flex items-center justify-center">
-      <p>Home page</p>
+      <p>Lens</p>
     </div>
   );
 }
